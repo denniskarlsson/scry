@@ -50,7 +50,7 @@ $IMAGE_FILE    = '';      // image filename ('IMG20040201.jpg')
 $IMAGE_DIR     = '';      // image directory under $CFG_path_images ('Family/2003')
 $PATH          = '';      // full filesystem path to directory / image
 $PATH_BASEDIR  = '';      // filesystem path to directory / image without filename
-$URL_PROJECT   = 'https://github.com/denniskarlsson/scry';
+$URL_PROJECT   = 'https://github.com/jonsnow1357/scry';
 header('X-Powered-By: Scry ' . SCRY_VERSION . ' - ' . $URL_PROJECT);
 
 //////////////////////////////////////////////////////////////////////////////
@@ -77,7 +77,7 @@ if ($CFG_variable_mode == 'path') {
 
 // redirect bad action to root list
 //
-if (!preg_match('/^(image|list|view)$/', $VIEW)) {
+if (!in_array($VIEW, ['image', 'list', 'view'])) {
    if ($CFG_variable_mode == 'path') {
      header("Location: $CFG_url_album/list/");
    } else {
