@@ -7,7 +7,7 @@
 //
 ?>
 
-<hr width="100%" noshade size="1" align="center" />
+<hr style="width: 100%; margin-right: auto; border: none; height: 1px; background-color: black; margin: 20px 0;">
 
 </div>
 
