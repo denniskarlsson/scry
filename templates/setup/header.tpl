@@ -14,15 +14,15 @@ if ($VIEW != 'list') {
 } // if
 
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
   <title>Scry: Simple PHP Photo Album</title>
-  <link rel="stylesheet" href="<?php print $T['template_url']; ?>/scry.css" />
+  <link rel="stylesheet" href="<?php print $T['template_url']; ?>/scry.css">
 </head>
 <body>
 
-<table align="center" width="85%" border="0" cellpadding="5" cellspacing="0">
+<table style="width: 85%; border: 0; padding: 5px; border-spacing: 0; margin-left: auto; margin-right: auto;">
   <tr>
     <td>
 
@@ -31,9 +31,9 @@ if ($VIEW != 'list') {
 </div>
 
     </td>
-    <td align="right">
+    <td style="text-align: right;">
 
-<img src="<?php print $T['template_url']; ?>/icon.png" width="10%" height="10%">
+<img src="<?php print $T['template_url']; ?>/icon.png" alt="" style="width: 10%; height: 10%;">
 
     </td>
   </tr>
