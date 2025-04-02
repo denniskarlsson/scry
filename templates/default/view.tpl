@@ -24,7 +24,7 @@
             <div class="images">
 
 <?php
-if (is_array($T['prev'])) {
+if (isset($T['prev']) && is_array($T['prev'])) {
   print('<a style="text-decoration: none;" href="' . $T['prev']['view_url'] . '"><img src="' . $T['prev']['thumb_url'] . '" alt="previous" /><br />&lt; previous</a>');
 } else {
   print("&nbsp;");
@@ -37,7 +37,7 @@ if (is_array($T['prev'])) {
             <p>
 
 <?php
-if (is_array($T['current']['exif_data'])) {
+if (isset($T['current']['exif_data']) && is_array($T['current']['exif_data'])) {
   // there are hundreds of exif tags; this is just a sample based images from a Canon S30
   // see exif.php for more details
   //
@@ -59,7 +59,7 @@ if (is_array($T['current']['exif_data'])) {
             <div class="images">
 
 <?php
-if (is_array($T['next'])) {
+if (isset($T['next']) && is_array($T['next'])) {
   print('<a style="text-decoration: none;" href="' . $T['next']['view_url'] . '"><img src="' . $T['next']['thumb_url'] . '" alt="next" /><br />next &gt;</a>');
 } else {
   print("&nbsp;");
