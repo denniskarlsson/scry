@@ -1,5 +1,10 @@
 // SPDX-License-Identifier: BSD-3-Clause
 
+2025-04-02  Dennis Karlsson <dennis@dennis.se>
+
+       * Updated to newer webstandard
+       * Added some checks to see if arrays are populated
+
 2019-09-10  Jon Snow <jonsnow1357@gmail.com>
 
         * Version 1.3
