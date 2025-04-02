@@ -16,3 +16,6 @@ print(htmlentities(implode("\n", $DEBUG_MESSAGES)));
 ?>
 
 </pre>
+
+</body>
+</html>
