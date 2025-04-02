@@ -2,18 +2,18 @@
 // SPDX-License-Identifier: BSD-3-Clause
 ?>
 
-<table cellpadding="5" cellspacing="0" width="85%" border="0" align="center">
+<table style="width: 85%; border: 0; padding: 5px; border-spacing: 0; margin-left: auto; margin-right: auto;">
 
 <?php
 if (@count($T['dirs'])) {
 ?>
   <tr>
-    <td width="100%" id="t_slim" align="center" colspan="2">
+    <td style="width: 100%; text-align: center;" id="t_slim" colspan="2">
 
 <?php
 //while(list($k, $d) = @each($T['dirs'])) {
 foreach ($T['dirs'] as $k => $d) {
-  print('<div class="folder"><a href="' . $d['list_url'] . '"><img src="' . $T['template_url'] . '/folder.png" alt="['. $d['name'] . ']" width="72" height="72" border="0" /><br />' . $d['name'] . "</a></div>\n");
+  print('<div class="folder"><a href="' . $d['list_url'] . '"><img src="' . $T['template_url'] . '/folder.png" alt="['. $d['name'] . ']" width="72" height="72" style="border: 0;"><br>' . $d['name'] . "</a></div>\n");
 }
 ?>
 
@@ -26,13 +26,13 @@ if (@count($T['files'])) {
 ?>
 
   <tr>
-    <td id="t_main" width="100%" colspan="2">
+    <td style="width: 100%;" id="t_main" colspan="2">
       <div class="images">
 
 <?php
 //while(list($k, $f) = @each($T['files'])) {
 foreach ($T['files'] as $k => $f) {
-  print('<a href="' . $f['view_url'] . '"><img src="' . $f['thumb_url'] . '" alt="' . $f['name'] . '" border="0"' . " /></a>\n");
+  print('<a href="' . $f['view_url'] . '"><img src="' . $f['thumb_url'] . '" alt="' . $f['name'] . '" style="border: 0;"' . "></a>\n");
 }
 ?>
 
@@ -40,8 +40,8 @@ foreach ($T['files'] as $k => $f) {
     </td>
   </tr>
   <tr>
-    <td align="left"><?php if ($T['offset_prev'] != -1) print('<a href="' . $T['offset_prev_url'] . '">&lt; previous page</a>'); ?></td>
-    <td align="right"><?php if ($T['offset_next'] != -1) print('<a href="' . $T['offset_next_url'] . '">next page &gt;</a>'); ?></td>
+    <td style="text-align: left;"><?php if ($T['offset_prev'] != -1) print('<a href="' . $T['offset_prev_url'] . '">&lt; previous page</a>'); ?></td>
+    <td style="text-align: right;"><?php if ($T['offset_next'] != -1) print('<a href="' . $T['offset_next_url'] . '">next page &gt;</a>'); ?></td>
   </tr>
 
 <?php
@@ -50,7 +50,7 @@ if (!@count($T['dirs']) && !@count($T['files'])) {
 ?>
 
   <tr>
-    <td id="t_main" width="100%" colspan="2">
+    <td style="width: 100%;" id="t_main" colspan="2">
       <div class="images">
         <p align="center">No photos or folders found</p>
       </div>
