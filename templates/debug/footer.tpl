@@ -6,16 +6,14 @@
 //       purposes. This template does not display any images.
 //
 ?>
-
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title><?php print $T['title']; ?></title>
+</head>
+<body>
 <p>
-Debug variables:
-<pre>
-
-<?php
-print(htmlentities(implode("\n", $DEBUG_MESSAGES)));
-?>
-
-</pre>
-
-</body>
-</html>
+<strong>Debugging Theme</strong><br>
+Scry: Simple PHP Photo Album
+<p>
