@@ -133,6 +133,6 @@ scry[<?php print SCRY_VERSION; ?>]_php[<?php print PHP_VERSION; ?>]_gd[<?php pri
 serversig[<?php print $_SERVER['SERVER_SIGNATURE']; ?>]_serversoft[<?php print $_SERVER['SERVER_SOFTWARE']; ?>]
 docroot[<?php print $_SERVER['DOCUMENT_ROOT']; ?>]
 script_file[<?php print $_SERVER['SCRIPT_FILENAME']; ?>]
-script_uri[<?php print $_SERVER['SCRIPT_URI']."]"); ?>]
+script_uri[<?php print $_SERVER['SCRIPT_URI']; ?>]
 
 </pre>
