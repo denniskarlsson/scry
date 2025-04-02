@@ -11,9 +11,9 @@
           <td width="100%" colspan="3" align="center">
             <div class="images">
             <img src="<?php print $T['current']['image_url']; ?>" alt="<?php print $T['current']['name']; ?>" width="<?php print $T['current']['view_size'][0]; ?>" height="<?php print $T['current']['view_size'][1]; ?>" />
-            <br />
+            <br>
             <?php print $T['current']['name']; ?>
-            <br />
+            <br>
             <a href="<?php print($T['current']['raw_url']); ?>"><?php print($T['current']['image_size'][0] . 'x' . $T['current']['image_size'][1] . ', ' . $T['current']['file_size']); ?></a>
             </div>
           </td>
@@ -23,7 +23,7 @@
           <td width="30%" align="left" valign="bottom">
             <div class="images">
 <?php
-if (is_array($T['prev'])) {
+if (isset($T['prev']) && is_array($T['prev'])) {
   print('<a style="text-decoration: none;" href="' . $T['prev']['view_url'] . '"><img src="' . $T['prev']['thumb_url'] . '" alt="previous" /><br />&lt; previous</a>');
 } else {
   print("&nbsp;");
@@ -34,7 +34,7 @@ if (is_array($T['prev'])) {
           <td width="40%" align="middle" valign="bottom">
             <p>
 <?php
-if (is_array($T['current']['exif_data'])) {
+if (isset($T['current']['exif_data']) && is_array($T['current']['exif_data'])) {
   // there are hundreds of exif tags; this is just a sample based images from a Canon S30
   // see exif.php for more details
   //
@@ -50,8 +50,8 @@ if (is_array($T['current']['exif_data'])) {
           <td width="30%" align="right" valign="bottom">
             <div class="images">
 <?php
-if (is_array($T['next'])) {
-  print('<a style="text-decoration: none;" href="' . $T['next']['view_url'] . '"><img src="' . $T['next']['thumb_url'] . '" alt="next" /><br />next &gt;</a>');
+if (isset($T['next']) && is_array($T['next'])) {
+  print('<a style="text-decoration: none;" href="' . $T['next']['view_url'] . '"><img src="' . $T['next']['thumb_url'] . '" alt="next" /><br>next &gt;</a>');
 } else {
   print("&nbsp;");
 }
