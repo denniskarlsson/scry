@@ -134,5 +134,5 @@ serversig[<?php print $_SERVER['SERVER_SIGNATURE']; ?>]_serversoft[<?php print $
 docroot[<?php print $_SERVER['DOCUMENT_ROOT']; ?>]
 script_file[<?php print $_SERVER['SCRIPT_FILENAME']; ?>]
 script_uri[<?php print $_SERVER['SCRIPT_URI']."]"); ?>]
-?>
+
 </pre>
