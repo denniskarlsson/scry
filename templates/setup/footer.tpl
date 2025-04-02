@@ -12,8 +12,9 @@
 </div>
 
     </td>
+  </tr>
   <tr>
-    <td>
+    <td colspan="2">
 
 <div class="footer_text">
   Powered by <a href="<?php print($URL_PROJECT); ?>">Scry</a>
