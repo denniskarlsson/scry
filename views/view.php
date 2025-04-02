@@ -39,9 +39,12 @@ $T['current']['file_size']   = round($file_size / 1024, 0) . ' KB';
 if ($CFG_use_exifer) {
   $T['current']['exif_data'] = $exif_data;
 }
-
-$T['next']    = $data['files'][($INDEX + 1)];
-$T['prev']    = $data['files'][($INDEX - 1)];
+if (isset($data['files'][($INDEX + 1)])) {
+	$T['next']    = $data['files'][($INDEX + 1)];
+}
+if (isset($data['files'][($INDEX - 1)])) {
+	$T['prev']    = $data['files'][($INDEX - 1)];
+}
 $T['path']    =  path_list($IMAGE_DIR);
 debug('T', $T);
 
