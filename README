@@ -39,7 +39,7 @@ How to Install Scry
 1. Clone the repository somewhere into your webserver's document root:
 
   cd /path/to/webserver/document/root
-  git clone https://github.com/jonsnow1357/scry.git
+  git clone https://github.com/denniskarlsson/scry.git
 
 2. Create a directory for cached image files. Set the permissions of this
   directory so the webserver can create files therein.
